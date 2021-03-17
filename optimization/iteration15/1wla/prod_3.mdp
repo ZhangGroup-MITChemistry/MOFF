@@ -1,0 +1,31 @@
+integrator = sd ;Run control: Use Langevin Dynamics protocols.
+dt = 0.01 ;time step in reduced units.
+nsteps = 40000000 ;number of integration steps
+nstxout = 200000 ;frequency to write coordinates to output trajectory .trr file.
+nstvout = 200000 ;frequency to write velocities to output trajectory .trr file
+nstlog = 200000 ;frequency to write energies to log file
+nstenergy = 2000 ;frequency to write energies to energy file
+nstxtcout = 2000 ;frequency to write coordinates to .xtc trajectory
+
+xtc_grps = system ;group(s) to write to .xtc trajectory (assuming no ndx file is supplied to grompp).
+energygrps = system ;group(s) to write to energy file
+nstlist = 20 ;Frequency to update the neighbor list
+ns_type = grid ; use grid-based neighbor searching
+cutoff-scheme = group
+vdw-type = User
+coulombtype = User
+rlist = 2.0 ;cut-off distance for the short-range neighbor list
+rvdw = 2.0 ; cut-off distance for Vdw interactions
+rvdw-switch = 1.5
+table-extension = 10 ; (nm) Should equals half of the box’s longest diagonal.
+pbc = xyz ; Periodic boundary conditions in all the directions
+
+tc-grps = system ;Temperature coupling
+tau_t = 1.0 ; Temperature coupling time constant. Smaller values = stronger coupling.
+ref_t = 360.0 ; ~1 reduced temperature unit (see Gromacs manual or SMOG2 manual for details)
+Pcoupl = no ;Pressure coupling
+gen_vel = yes ;Velocity generation
+gen_temp = 360.0
+gen_seed = 27
+ld_seed = 2397
+comm_mode = linear ; center of mass velocity removal.
