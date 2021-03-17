@@ -1,0 +1,4 @@
+GYRATION TYPE=RADIUS ATOMS=@allatoms LABEL=rg
+
+RESTRAINT	ARG=rg	AT=1.530	SLOPE=25.0	LABEL=restraint
+PRINT ARG=rg,restraint.bias FILE=rg.dat STRIDE=20000
