@@ -1,0 +1,30 @@
+integrator      = steep         ; Algorithm options
+                                ; steep = steepest descent minimization
+                                ; MD = Leap Frog algorith for integrating Newtonś equations of motion )
+emtol           = 10.0          ; Stop minimization when the energy changes by less than emtol kJ/mol.
+emstep          = 20
+nsteps          = 10000         ; Maximum number of (minimization) steps to perform
+nstenergy       = 100            ; Write energies to disk every nstenergy steps
+nstxtcout       = 100            ; Write coordinates to disk every nstxtcout steps
+
+xtc_grps = system ;group(s) to write to .xtc trajectory (assuming no ndx file is supplied to grompp).
+energygrps = system ;group(s) to write to energy file
+nstlist = 20 ;Frequency to update the neighbor list
+ns_type = grid ; use grid-based neighbor searching
+rlist = 3.0 ;cut-off distance for the short-range neighbor list
+rvdw = 3.0 ; cut-off distance for Vdw interactions
+vdw-type = User
+coulombtype = User
+cutoff-scheme = group
+
+pbc = no ; Periodic boundary conditions in all the directions
+table-extension = 10 ; (nm) Should equals half of the box’s longest diagonal.
+tc-grps = system ;Temperature coupling
+tau_t = 1.0 ; Temperature coupling time constant. Smaller values = stronger coupling.
+ref_t = 80.0 ; ~1 reduced temperature unit (see Gromacs manual or SMOG2 manual for details)
+Pcoupl = no ;Pressure coupling
+gen_vel = yes ;Velocity generation
+gen_temp = 80.0
+gen_seed = -1
+ld_seed = -1
+comm_mode = angular ; center of mass velocity removal.
