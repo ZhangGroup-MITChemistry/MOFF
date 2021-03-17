@@ -1,0 +1,50 @@
+HEADER    
+TITLE     MDANALYSIS FRAME 0: Created by PDBWriter
+REMARK     6 MODELLER OBJECTIVE FUNCTION:       214.3212
+REMARK     6 MODELLER BEST TEMPLATE % SEQ ID: 100.000
+CRYST1    0.000    0.000    0.000   0.00   0.00   0.00 P 1           1
+ATOM      1  CA  ALA S   1       6.373  27.658  44.751  1.00  8.26      SYST C
+ATOM      2  CA  CYS S   2       2.862  26.383  45.193  1.00 26.31      SYST C
+ATOM      3  CA  GLU S   3       3.148  22.704  45.889  1.00 33.76      SYST C
+ATOM      4  CA  THR S   4       1.503  20.411  43.417  1.00 97.96      SYST C
+ATOM      5  CA  ASN S   5       0.987  16.807  44.399  1.00 35.32      SYST C
+ATOM      6  CA  LYS S   6      -0.180  15.729  40.966  1.00 90.27      SYST C
+ATOM      7  CA  ARG S   7       2.239  13.763  38.860  1.00 61.35      SYST C
+ATOM      8  CA  LYS S   8       2.264  12.540  35.314  1.00 71.89      SYST C
+ATOM      9  CA  ARG S   9       2.195   8.867  34.522  1.00 73.78      SYST C
+ATOM     10  CA  GLU S  10       5.954   8.573  34.154  1.00 55.29      SYST C
+ATOM     11  CA  GLN S  11       6.606  10.333  37.428  1.00 47.13      SYST C
+ATOM     12  CA  ILE S  12       4.446   7.969  39.358  1.00 70.41      SYST C
+ATOM     13  CA  SER S  13       2.858   4.599  38.779  1.00 52.57      SYST C
+ATOM     14  CA  THR S  14       6.155   3.724  40.402  1.00 49.53      SYST C
+ATOM     15  CA  ASP S  15       8.495   1.554  38.437  1.00 32.79      SYST C
+ATOM     16  CA  ASN S  16       9.143  -2.125  38.797  1.00 51.70      SYST C
+ATOM     17  CA  GLU S  17      11.186  -4.444  36.650  1.00 76.16      SYST C
+ATOM     18  CA  ALA S  18       8.357  -6.716  35.651  1.00 31.03      SYST C
+ATOM     19  CA  LYS S  19       5.580  -4.175  35.361  1.00 84.02      SYST C
+ATOM     20  CA  MET S  20       7.341  -1.977  32.882  1.00 29.46      SYST C
+ATOM     21  CA  GLN S  21       8.159  -5.066  30.855  1.00 46.34      SYST C
+ATOM     22  CA  ILE S  22       4.817  -6.816  31.117  1.00 39.50      SYST C
+ATOM     23  CA  GLN S  23       2.687  -3.696  31.031  1.00 80.86      SYST C
+ATOM     24  CA  GLU S  24       4.981  -2.787  28.254  1.00 90.25      SYST C
+ATOM     25  CA  GLU S  25       2.528  -5.177  26.670  1.00 99.84      SYST C
+ATOM     26  CA  LYS S  26       1.767  -3.100  23.691  1.00127.90      SYST C
+ATOM     27  CA  SER S  27       1.015  -4.062  20.181  1.00 25.09      SYST C
+ATOM     28  CA  PRO S  28       4.064  -5.678  18.777  1.00 55.81      SYST C
+ATOM     29  CA  LYS S  29       6.530  -3.230  17.337  1.00 94.59      SYST C
+ATOM     30  CA  LYS S  30       6.965  -5.031  14.105  1.00110.16      SYST C
+ATOM     31  CA  LYS S  31       4.912  -7.542  12.218  1.00 76.51      SYST C
+ATOM     32  CA  ARG S  32       5.422 -10.040   9.453  1.00102.58      SYST C
+ATOM     33  CA  LYS S  33       5.181  -8.947   5.907  1.00 89.89      SYST C
+ATOM     34  CA  LYS S  34       3.086 -11.565   4.295  1.00 31.23      SYST C
+ATOM     35  CA  ARG S  35       4.933 -13.710   1.847  1.00 50.65      SYST C
+ATOM     36  CA  SER S  36       3.955 -13.480  -1.772  1.00 30.37      SYST C
+ATOM     37  CA  SER S  37       4.479 -16.584  -3.764  1.00 41.52      SYST C
+ATOM     38  CA  LYS S  38       3.200 -18.814  -6.454  1.00194.69      SYST C
+ATOM     39  CA  ALA S  39       0.116 -19.118  -4.331  1.00 37.37      SYST C
+ATOM     40  CA  ASN S  40      -3.301 -18.798  -5.843  1.00 44.68      SYST C
+ATOM     41  CA  LYS S  41      -3.660 -15.174  -6.704  1.00106.66      SYST C
+ATOM     42  CA  PRO S  42      -6.450 -13.774  -8.710  1.00 63.15      SYST C
+ATOM     43  CA  PRO S  43      -5.801 -12.464 -12.122  1.00 67.15      SYST C
+ATOM     44  CA  GLU S  44      -6.132  -8.763 -12.699  1.00 19.00      SYST C
+END
