@@ -1,0 +1,11 @@
+gmx_mpi editconf -f IBB_CA.pdb -box 50 50 50 -c -o IBB_CA.pdb
+gmx_mpi grompp -f min.mdp -c IBB_CA.pdb -p IBB.top -o min.tpr
+gmx_mpi mdrun -deffnm min -table table_MOFF.xvg -tablep table_smog.xvg
+
+gmx_mpi grompp -f prod_0.mdp -c min.gro -p IBB.top -o prod_0.tpr
+gmx_mpi grompp -f prod_1.mdp -c min.gro -p IBB.top -o prod_1.tpr
+gmx_mpi grompp -f prod_2.mdp -c min.gro -p IBB.top -o prod_2.tpr
+gmx_mpi grompp -f prod_3.mdp -c min.gro -p IBB.top -o prod_3.tpr
+gmx_mpi grompp -f prod_4.mdp -c min.gro -p IBB.top -o prod_4.tpr
+gmx_mpi grompp -f prod_5.mdp -c min.gro -p IBB.top -o prod_5.tpr
+mpirun -np 6 gmx_mpi mdrun -deffnm prod_ -table table_MOFF.xvg -tablep table_smog.xvg -multi 6 -replex 100
