@@ -68,7 +68,7 @@ end
 
 
 % Add gamma*sigma_pdb to add in the error tolerance
-gamma=2;
+gamma=1.5;
 for i=1:7
     min_E(((i-1)*N+1) : (i*N))=min_E(((i-1)*N+1) : (i*N))+gamma*sigma_pdb(i);
 end
