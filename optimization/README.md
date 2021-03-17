@@ -9,25 +9,25 @@ Note that the numbering schemes are different in the simulation folders and the 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 Do steps 1-5 on all proteins to generate the biased and unbiased ensemble:
-1. Run simulation in unbiased ensemble. (Note IBB is used here but can be any protein)
+1. Run simulation in unbiased ensemble. (Note IBB is used here but can be any protein. Also, table_MOFF.xvg has been called table.xvg)
         A. Place the PDB of alpha-carbons in a simulation box.
             gmx_mpi editconf -f IBB_CA.pdb -box 50 50 50 -c -o IBB_CA.pdb
         B. Run energy minimization
             gmx_mpi grompp -f min.mdp -c IBB_CA.pdb -p IBB.top -o min.tpr
-            gmx_mpi mdrun -deffnm min -table table_MOFF.xvg -tablep table_smog.xvg
-            (Notice the usage of the two tables. Use the MOFF table (table_MOFF.xvg) for non-bonded interactions (-table), and use the SMOG table (table_smog.xvg) for paired interactions (-tablep). Note that only proteins with alpha helices will require a second table.
+            gmx_mpi mdrun -deffnm min -table table.xvg -tablep table_smog.xvg
+            (Notice the usage of the two tables. Use the MOFF table (table.xvg) for non-bonded interactions (-table), and use the SMOG table (table_smog.xvg) for paired interactions (-tablep). Note that only proteins with alpha helices will require a second table.
         C. Run replica exchange simulation in langevin dynamics at Temperatures ranging from 300 to 400 K. 
             gmx_mpi grompp -f prod_0.mdp -c min.gro -p IBB.top -o prod_0.tpr
             gmx_mpi grompp -f prod_1.mdp -c min.gro -p IBB.top -o prod_1.tpr
             gmx_mpi grompp -f prod_2.mdp -c min.gro -p IBB.top -o prod_2.tpr
             gmx_mpi grompp -f prod_3.mdp -c min.gro -p IBB.top -o prod_3.tpr
             gmx_mpi grompp -f prod_5.mdp -c min.gro -p IBB.top -o prod_5.tpr
-            mpirun -np 6 gmx_mpi mdrun -deffnm prod_ -table table_MOFF.xvg -tablep table_smog.xvg -multi 6 -replex 100
+            mpirun -np 6 gmx_mpi mdrun -deffnm prod_ -table table.xvg -tablep table_smog.xvg -multi 6 -replex 100
 2. Run simulation in biased ensemble
             A. Repeat steps (A-B) above.
             B. Prepare .tpr files as done for the unbiased ensemble.
             C. Run simulation. Use -plumed extension to add in bias.
-            mpirun -np 6 gmx_mpi mdrun -deffnm prod_ -table table_MOFF.xvg -tablep table_smog.xvg -multi 6 -replex 100 -plumed bias.dat
+            mpirun -np 6 gmx_mpi mdrun -deffnm prod_ -table table.xvg -tablep table_smog.xvg -multi 6 -replex 100 -plumed bias.dat
 3. Optimize the biased ensemble at 300K. 
             A. Use rg_ave.py. The code will output 2 numbers. One is the mean Rg, after equilibration. The other is the standard deviation.Use rg_ave.py.
             rg_ave.py rg.0.dat
