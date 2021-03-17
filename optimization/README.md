@@ -41,6 +41,7 @@ Do steps 1-5 on all proteins to generate the biased and unbiased ensemble:
         B. Move the biased ensemble to the bias_dat folder, call the files *_bias.xvg (for gyrate.xvg) and *_bias.pdb (for prod_0.pdb)
 
 Do steps 6-9 to generate the force field from the trajectories:
+
 6. Update the presents and parameters section of prepare_opt.py. The important paramters are highlighted below. From iteration to iteration, only alpha should change.
         A. type - the number of types of atoms in your force field (20 for all amino acids)
         B. timesteps - the timesteps in each configuration
@@ -48,6 +49,7 @@ Do steps 6-9 to generate the force field from the trajectories:
         D. rg_exp- the experimental value of Rg for each protein in the training set
         E. alpha- the slope of the biasing potential for each Rg in the training set. IMPORTANT: this needs to be updated to match the value of SLOPE after each optimization
         F. The name of all training proteins is taken in as an argument. The order is improtant. The ordered proteins should come first. rg_exp and alpha values should be in the same order as the proteins in the argument.
+
 7. Run prepare_opt.py - This code calculates the contacts and biasing energies in preparation from fitting. IMPORTANT: make sure order of proteins given matches rg_exp and alpha (step 6F)
         python prepare_opt.py 1soy  1ubq  1wla  3mzq  5tvz  6eez  6h8m  ACTR  An16 asynuclein  ERMTADn hNHE1cdt IBB N49 N98 NLS NSP NUL NUS P53 ProTa sh4ud Sic
         Outputs:
@@ -56,6 +58,7 @@ Do steps 6-9 to generate the force field from the trajectories:
         C. bias_tot.txt - Biasing energy of all structures (alpha*Rg in Eq 2)
         D. pdb_list.txt - Contacts of the PDB structure (C_PDB in Eq. 3)
         E. pdb_list_contacts.txt - list of contacts in the sampled structures (C_sim in Eq. 3). Contacts from Rg within 0.05 have not been removed, and noise has not been removed.
+ 
 8. Run calc_eps.m
     This is the code that does the necessary fitting by simulataneously solving Eq. 2 and Eq. 3. 
     matlab nodisplay -nosplash - nodesktop -r "calc_eps; exit"
@@ -65,6 +68,7 @@ Do steps 6-9 to generate the force field from the trajectories:
     Outputs:
         A. E_pdb.txt, E_sim.txt - new energies of the PDB and simulated energies. For debugging.
         B. delta_eps.txt - matrix representing the change in contact energy from solving Eq. 2 and Eq. 3.
+        
 9. Run finish_opt.py
     This script converts the change in contact energy to the non_bonded parameters read by gromacs.
     Inputs:
