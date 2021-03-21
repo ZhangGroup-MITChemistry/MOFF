@@ -1,9 +1,10 @@
 MOFF Guide
 By Andrew Latham and Bin Zhang
-Please cite Latham, A; Zhang, B BioRx, 2021. (https://www.biorxiv.org/content/10.1101/2021.01.06.425600v1.abstract)
+Please cite Latham, A; Zhang, B BioRxiv, 2021. (https://www.biorxiv.org/content/10.1101/2021.01.06.425600v1.abstract)
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 You will observe that there are 2 nested folders: Ready and To_setup. Ready is a ready to run simulation, with all the necessary files ready to go. To_setup is how to start a simulation from scratch with a new PDB.
+
 In this guide, we will start with how to run a simulation from a ready to run trajectory. We will then walk you through setting up you own simulation conditions.
 
 -------------------------------------------------------------------------------------------   Run Simulation         ----------------------------------------------------------------------------------------
