@@ -1,6 +1,6 @@
 MOFF Guide
 By Andrew Latham and Bin Zhang
-Please cite Latham, A; Zhang, B BioRx, 2021. (https://www.biorxiv.org/content/10.1101/2021.01.06.425600v1.abstract)
+Please cite Latham, A; Zhang, B BioRxiv, 2021. (https://www.biorxiv.org/content/10.1101/2021.01.06.425600v1.abstract)
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
