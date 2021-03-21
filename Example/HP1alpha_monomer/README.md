@@ -7,6 +7,7 @@ Please cite Latham, A; Zhang, B BioRx, 2021. (https://www.biorxiv.org/content/10
 This portion of the tutorial will demonstrate how to handle ordred regions in large proteins. While the majority of the framework is the same, there is one additional step in setting up the simulation.
 This step (step 6 below), adds the structure based folded potential, U_fold. In our study, we utilize this potential to model HP1 dimers, and here we walk through how to set up such a simulation for a monomer of HP1. We recommend tuning the strength of this potential to all atom simulations.
 More information on this type of modeling is available through the SMOG websites (https://smog-server.org).
+
 python write_Ufold.py jobid start1 end1 smog_file pair_eps
 jobid - name of the pdb / topology you want to run
 start1 - starting index for including the folded potential
