@@ -3,6 +3,7 @@ By Andrew Latham and Bin Zhang
 Please cite Latham, A; Zhang, B BioRx, 2021. (https://www.biorxiv.org/content/10.1101/2021.01.06.425600v1.abstract)
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 This portion of the tutorial will demonstrate how to handle ordred regions in large proteins. While the majority of the framework is the same, there is one additional step in setting up the simulation.
 This step (step 6 below), adds the structure based folded potential, U_fold. In our study, we utilize this potential to model HP1 dimers, and here we walk through how to set up such a simulation for a monomer of HP1. We recommend tuning the strength of this potential to all atom simulations.
 More information on this type of modeling is available through the SMOG websites (https://smog-server.org).
@@ -12,6 +13,7 @@ start1 - starting index for including the folded potential
 end1 - ending index for including the folded potential
 smog_file - name of smog topology file (default = smog.top)
 pair_eps - strength of folded potential (default = 3 kJ/mol, this should be fit to all atom simulations)
+
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 You will observe that there are 2 nested folders: Ready and To_setup. Ready is a ready to run simulation, with all the necessary files ready to go. To_setup is how to start a simulation from scratch with a new PDB.
 In this guide, we will start with how to run a simulation from a ready to run trajectory. We will then walk you through setting up you own simulation conditions.
