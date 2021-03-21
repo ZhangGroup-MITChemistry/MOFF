@@ -9,10 +9,15 @@ This step (step 6 below), adds the structure based folded potential, U_fold. In 
 More information on this type of modeling is available through the SMOG websites (https://smog-server.org).
 
 python write_Ufold.py jobid start1 end1 smog_file pair_eps
+
 jobid - name of the pdb / topology you want to run
+
 start1 - starting index for including the folded potential
+
 end1 - ending index for including the folded potential
+
 smog_file - name of smog topology file (default = smog.top)
+
 pair_eps - strength of folded potential (default = 3 kJ/mol, this should be fit to all atom simulations)
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
