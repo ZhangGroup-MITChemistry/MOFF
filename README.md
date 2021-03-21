@@ -40,7 +40,7 @@ Steps:
                 v.     	cut2 is the distance at which electrostatic interactions are dampened with a fifth degree polynomial switching function (default=1.2 nm)
                 vi.     table_length is the length of the generated table (default=15 nm)
                 vii.    dr is the minimal distance at which the table is calculated (default=0.002 nm)
-5.      Optional: For folded proteins, additional potentials can be added to stabilize folded structures (U_fold). See the README in MOFF/Example/HP1alpha_monomer for full details on using U_fold.py.
+5.      Optional: For folded proteins, additional potentials can be added to stabilize folded structures (U_fold). See the README in MOFF/Example/HP1alpha_monomer for full details on using write_Ufold.py.
 
 6.      Run simulation
         a.      Place in an empty simulation box
