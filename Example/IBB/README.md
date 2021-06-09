@@ -1,6 +1,6 @@
 MOFF Guide
 By Andrew Latham and Bin Zhang
-Please cite Latham, A; Zhang, B BioRxiv, 2021. (https://www.biorxiv.org/content/10.1101/2021.01.06.425600v1.abstract)
+Please cite Latham, A; Zhang, B J. Chem. Theory Comput. 2021, 17, 3134. (https://pubs.acs.org/doi/abs/10.1021/acs.jctc.0c01220)
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 You will observe that there are 2 nested folders: Ready and To_setup. Ready is a ready to run simulation, with all the necessary files ready to go. To_setup is how to start a simulation from scratch with a new PDB.
