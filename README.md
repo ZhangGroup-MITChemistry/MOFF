@@ -1,6 +1,6 @@
 # MOFF Guide
 By Andrew Latham and Bin Zhang
-Please cite Latham, A; Zhang, B BioRxiv, 2021. (https://www.biorxiv.org/content/10.1101/2021.01.06.425600v1.abstract)
+Please cite Latham, A; Zhang, B J. Chem. Theory Comput. 2021, 17, 3134. (https://pubs.acs.org/doi/abs/10.1021/acs.jctc.0c01220)
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 In this folder, we have the scripts necessary to run MOFF simulations (Scripts), 2 examples of simulating proteins in MOFF (Examples), and an example of how we optimized the force field, along with its corresponding code (Optimization).
