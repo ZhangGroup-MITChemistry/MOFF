@@ -1,6 +1,6 @@
 # MOFF Guide
 By Andrew Latham and Bin Zhang
-Please cite Latham, A; Zhang, B BioRxiv, 2021. (https://www.biorxiv.org/content/10.1101/2021.01.06.425600v1.abstract)
+Please cite Latham, A; Zhang, B J. Chem. Theory Comput. 2021, 17, 3134. (https://pubs.acs.org/doi/abs/10.1021/acs.jctc.0c01220)
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 This portion walks you through our force field optimization procedure. The process is done iteratively, and data from iteration0 and iteration15 are in the corresponding folders. While this procedure for optimizing the tertiary potential is the same, the secondary structure is different, as highlighted in the subsection "Varying the secondary structure potential during optimization".
