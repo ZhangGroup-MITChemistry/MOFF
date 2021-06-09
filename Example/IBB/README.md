@@ -5,7 +5,7 @@ Please cite Latham, A; Zhang, B J. Chem. Theory Comput. 2021, 17, 3134. (https:/
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 You will observe that there are 2 nested folders: Ready and To_setup. Ready is a ready to run simulation, with all the necessary files ready to go. To_setup is how to start a simulation from scratch with a new PDB.
 
-In this guide, we will start with how to run a simulation from a ready to run trajectory. We will then walk you through setting up you own simulation conditions.
+In this guide, we will start with how to run a simulation from a ready to run trajectory. We will then walk you through setting up your own simulation conditions.
 
 -------------------------------------------------------------------------------------------   Run Simulation         ----------------------------------------------------------------------------------------
 1. Go to the folder Ready
