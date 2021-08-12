@@ -1,7 +1,9 @@
 # MOFF - MRG-CG-DNA Guide
 By Andrew Latham and Bin Zhang
 Please cite: Latham, A; Zhang, B BioRxiv, 2021. ()
+
 Latham, A; Zhang, B J. Chem. Theory Comput. 2021, 17, 3134. (https://pubs.acs.org/doi/abs/10.1021/acs.jctc.0c01220)
+
 Savelyev, A; Papoian, GA Proc. Natl. Acad. Sci. U.S.A. 20210, 107, 20340.
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
