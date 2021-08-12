@@ -1,0 +1,8 @@
+#include "prot_dna.itp"
+#include "hp1a_mono.itp"
+#include "cgdna.itp"
+
+[ molecules ]
+; name            #molec
+hp1a_mono	1
+cgdna	1
