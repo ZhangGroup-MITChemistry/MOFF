@@ -47,8 +47,8 @@ if len(sys.argv)>2:
 else:
     MOFFout='table_MOFF.xvg'
 
-if len(sys.argv) > 2:
-    SMOGout = sys.argv[2]
+if len(sys.argv) > 3:
+    SMOGout = sys.argv[3]
 else:
     SMOGout = 'table_smog.xvg'
 
