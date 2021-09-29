@@ -10,7 +10,7 @@ import numpy
 
 
 # Instructions
-if len(sys.argv)>7:
+if len(sys.argv)>8:
     print("Error: Incorrect usage. Please input proper files:")
     print("python write_table.py ionic_strength MOFFout SMOGout cut cut2 table_length dr\n")
     print("ionic_strength is for the debye-huckel electrostatic interactions, in mM (default=150 mM)")
