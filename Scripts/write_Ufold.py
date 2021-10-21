@@ -178,6 +178,7 @@ def write_ufold(top_file,pairs,pair_eps):
                             new2.write(str(index1)+'\t'+str(index2)+'\t1\t'+str(A)+'\t'+str(B)+'\n')
                     else:
                         pair_flag=0
+                        new2.write('\n')
             # write exclusions for added pairs exclusion_flag prevents exclusions section from being added twice
             elif line_split[1] == 'exclusions' or line_split[1] == 'system' and exclusion_flag==1:
                 if line_split[1] == 'exclusions':
