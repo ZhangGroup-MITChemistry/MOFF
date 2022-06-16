@@ -9,7 +9,7 @@ IBB is an example of our default potential on an IDP in our training set, and HP
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 What you will need:
-- GROMACS: a version of GROMACS that supports tabulated potentials. These were temporarily removed in 2020, but updated in 2021. (Version 2018.4 was used in published work)
+- GROMACS: a version of GROMACS that supports tabulated potentials. These were removed in 2020. (Version 2018.4 was used in published work)
 - Structure-based models of biomolecules (SMOG): https://smog-server.org (Version 2.2 was used in published work)
 - STRIDE: Use the stide web interface to generate a secondary structure prediction from your input PDB (http://webclu.bio.wzw.tum.de/cgi-bin/stride/stridecgi.py)
 - PDB: structure of the protein you want to simulate. This can be taken from the PDB or from structure prediction tools such as RaporX (http://raptorx.uchicago.edu) or i-TASSER (https://zhanglab.ccmb.med.umich.edu/I-TASSER/)
